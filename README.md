@@ -61,12 +61,13 @@ python train.py --input_dim 784 \
 生成的模型权重会以`npy`的形式自动保存在`save_model_path`文件夹中；训练中产生的loss和Accuracy信息会以`json`文件的形式保存在`save_loss_path`文件夹中
 ### 模型测试
 
+* 模型权重地址：[https://pan.baidu.com/s/1r3OuJWtuX7Np-Zfwd90wYg?pwd=2ttu](https://pan.baidu.com/s/1r3OuJWtuX7Np-Zfwd90wYg?pwd=2ttu)
 * 将模型权重文件放至目录`save_model_path`中；
-
 * 运行：
 ```bash
 python test.py --model_dir save_model_path/784_128_128_10_relu/
 ```
+推荐使用的模型参数为`784_128_128_10_relu`，在测试集上准确率可达88%。
 
 ## 二、模型参数搜索与可视化
 
@@ -83,8 +84,8 @@ python para_search.py --learning_rates 0.1 0.01 0.001 \
 ### 2. 训练信息以及模型参数可视化
 
 [`visualize.py`](visualize.py)提供了
-- 训练过程信息的可视化（包括loss和Accuracy）函数`plot_training_history`可以通过修改`json_files`的值选取不同参数下训练模型的信息进行可视化。
-- 对模型网络初始化和训练后各层参数的可视化代码（包括小提琴图和热力图） `plot_network_para`
+- 训练过程信息的可视化（包括loss和Accuracy）（函数`plot_training_history`可以通过修改`json_files`的值选取不同参数下训练模型的信息进行可视化）。
+- 对模型网络初始化和训练后各层参数的可视化代码（包括小提琴图和热力图） （函数`plot_network_para`）
 
 
 ## 更多实验结果详见报告
