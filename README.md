@@ -54,7 +54,7 @@ python train.py --input_dim 784 \
                 --activation_type "relu" \
                 --epochs 20 \
                 --learning_rate 0.1 \
-                --batch_size 16
+                --batch_size 16 \
                 --store
 ```
 
